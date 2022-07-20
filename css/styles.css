@@ -1,0 +1,89 @@
+body, html, header, h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: helvetica;
+}
+
+header,body,html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: url("https://wallpapercave.com/uwp/uwp982743.png") no-repeat center center;
+    background-size: cover;
+    color: black;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: height;
+    text-shadow: 1px 1px 10px black;
+}
+
+h1 {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    display: inline;
+    cursor: pointer;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: black;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+h1:hover::after {
+    transform: scale(1);
+}
+
+.subtitle {
+    font-size: 28px;
+}
+
+.subtitle2 {
+    color: #750000;
+    font-size: 28px;
+}
+
+.introduction {
+    font-size: 24px;
+}
+
+.network {
+    font-size: 30px;
+}
+
+.reseau {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.audio {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+}
